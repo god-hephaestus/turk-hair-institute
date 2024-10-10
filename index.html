@@ -179,17 +179,15 @@
     </div>
     <!-- Image Cards-->
     <div
-      class="w-full bg-white rounded-[29px] mx-auto max-w-[1133px] py-8 mt-12"
+      class="w-full bg-white rounded-[30px] mx-auto max-w-[1133px] py-8 mt-12"
     >
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[26px]">
-        <!-- First Box -->
-        <div class="col-span-1 relative w-full h-[626px]">
+        <div class="col-span-1 relative w-full h-[625px]">
           <img
             src="/asset/img/card1.jpeg"
             alt="Placeholder Image"
             class="absolute inset-0 w-full h-full object-cover rounded-[30px]"
           />
-          <!-- Overlay Box with text and button on top of the image -->
           <div
             class="absolute bottom-0 w-full p-4 text-center bg-[#779f7d] rounded-[20px]"
           >
@@ -203,7 +201,7 @@
         </div>
 
         <!-- Second Box -->
-        <div class="col-span-1 relative w-full h-[626px]">
+        <div class="col-span-1 relative w-full h-[625px]">
           <img
             src="/asset/img/card2.jpeg"
             alt="Placeholder Image"
@@ -221,8 +219,7 @@
           </div>
         </div>
 
-        <!-- Third Box -->
-        <div class="col-span-1 relative w-full h-[626px]">
+        <div class="col-span-1 relative w-full h-[625px]">
           <img
             src="/asset/img/card3.jpeg"
             alt="Placeholder Image"
@@ -240,8 +237,7 @@
           </div>
         </div>
 
-        <!-- Fourth Box -->
-        <div class="col-span-1 relative w-full h-[626px]">
+        <div class="col-span-1 relative w-full h-[625px]">
           <img
             src="/asset/img/card4.jpeg"
             alt="Placeholder Image"
@@ -324,6 +320,48 @@
         Tedavileri İnceleyin
       </button>
     </div>
+    <!-- Video with text-->
+    <div class="w-screen flex flex-col items-center h-[700px] bg-[#779f7d]">
+      <div
+        class="h-[572px] pr-[7px] justify-start items-center gap-[100px] inline-flex"
+      >
+        <div class="h-[572px] relative">
+          <img
+            class="w-full h-[572px] rounded-tl-[237px] rounded-tr-[237px] rounded-bl-[20px] rounded-br-[20px]"
+            src="https://via.placeholder.com/498x572"
+          />
+        </div>
+        <div class="h-[416px] relative flex-col justify-start items-start flex">
+          <div class="text-white text-xl font-bold">TURK HAIR INSTITUTE</div>
+          <div class="w-[588px]">
+            <p class="text-white text-[28px] font-normal">
+              2005 yılından bu yana saç ekimi ve diğer estetik alanlarında
+              araştırmalar yapan merkezi İstanbul’da olan alanında bir çok
+              tedavi ve tıbbi uygulama geliştirmiş olan merkezimiz bünyesinde
+              bulundurduğu 3 uzman ekibimizle hizmet vermeye devam etmektedir.
+            </p>
+          </div>
+          <div class="w-[588px] h-[50px] relative">
+            <div
+              class="w-[280px] h-[50px] left-0 top-0 absolute bg-[#779f7d] rounded-[30px] border-2 border-white"
+            ></div>
+            <div
+              class="left-[82px] top-[10px] absolute text-white text-xl font-medium"
+            >
+              Randevu Al
+            </div>
+            <div
+              class="w-[280px] h-[50px] left-[308px] top-0 absolute bg-white rounded-[30px] border-2 border-[#779f7d]"
+            ></div>
+            <div
+              class="left-[349px] top-[10px] absolute text-[#779f7d] text-xl font-medium"
+            >
+              Chat Via Whatsapp
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6 mt-12">
@@ -332,7 +370,8 @@
       </div>
     </footer>
 
-    <script>
+    <!-- navbar behavior-->
+    <script defer>
       window.addEventListener("scroll", function () {
         const navbar = document.getElementById("navbar");
         const navLinks = document.querySelectorAll(".nav-links");

@@ -1,18 +1,13 @@
-body {
-  font-family: "Poppins", sans-serif; /* Adding a modern, clean font */
-}
-
+body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Poppins", sans-serif;
-}
-
+h6,
 p,
 a,
-button {
+button,
+div {
   font-family: "Poppins", sans-serif;
 }
