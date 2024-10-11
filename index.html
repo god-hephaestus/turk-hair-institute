@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -321,44 +321,43 @@
       </button>
     </div>
     <!-- Video with text-->
-    <div class="w-screen flex flex-col items-center h-[700px] bg-[#779f7d]">
-      <div
-        class="h-[572px] pr-[7px] justify-start items-center gap-[100px] inline-flex"
-      >
-        <div class="h-[572px] relative">
-          <img
-            class="w-full h-[572px] rounded-tl-[237px] rounded-tr-[237px] rounded-bl-[20px] rounded-br-[20px]"
-            src="https://via.placeholder.com/498x572"
-          />
+    <div
+      class="w-screen flex flex-row items-center h-[700px] gap-[100px] h-[572px] bg-[#779f7d]"
+    >
+      <div class="h-full w-1/2 flex justify-center items-center relative">
+        <img
+          class="h-[572px] rounded-tl-[237px] rounded-tr-[237px] rounded-bl-[20px] rounded-br-[20px]"
+          src="/asset/img/video.jpeg"
+        />
+        <div
+          class="absolute flex justify-center items-center bg-[#779f7d] rounded-full w-[100px] h-[100px]"
+        >
+          <div
+            class="w-0 h-0 border-t-[15px] border-b-[15px] border-l-[25px] border-transparent border-l-white"
+          ></div>
         </div>
-        <div class="h-[416px] relative flex-col justify-start items-start flex">
-          <div class="text-white text-xl font-bold">TURK HAIR INSTITUTE</div>
-          <div class="w-[588px]">
-            <p class="text-white text-[28px] font-normal">
-              2005 yılından bu yana saç ekimi ve diğer estetik alanlarında
-              araştırmalar yapan merkezi İstanbul’da olan alanında bir çok
-              tedavi ve tıbbi uygulama geliştirmiş olan merkezimiz bünyesinde
-              bulundurduğu 3 uzman ekibimizle hizmet vermeye devam etmektedir.
-            </p>
-          </div>
-          <div class="w-[588px] h-[50px] relative">
-            <div
-              class="w-[280px] h-[50px] left-0 top-0 absolute bg-[#779f7d] rounded-[30px] border-2 border-white"
-            ></div>
-            <div
-              class="left-[82px] top-[10px] absolute text-white text-xl font-medium"
-            >
-              Randevu Al
-            </div>
-            <div
-              class="w-[280px] h-[50px] left-[308px] top-0 absolute bg-white rounded-[30px] border-2 border-[#779f7d]"
-            ></div>
-            <div
-              class="left-[349px] top-[10px] absolute text-[#779f7d] text-xl font-medium"
-            >
-              Chat Via Whatsapp
-            </div>
-          </div>
+      </div>
+      <div class="h-full w-1/2 flex flex-col justify-center items-start">
+        <h2 class="text-white text-xl mb-4 font-bold">TURK HAIR INSTITUTE</h2>
+        <div class="w-[588px]">
+          <p class="text-white text-[28px] font-normal">
+            2005 yılından bu yana saç ekimi ve diğer estetik alanlarında
+            araştırmalar yapan merkezi İstanbul’da olan alanında bir çok tedavi
+            ve tıbbi uygulama geliştirmiş olan merkezimiz bünyesinde
+            bulundurduğu 3 uzman ekibimizle hizmet vermeye devam etmektedir.
+          </p>
+        </div>
+        <div class="w-[570px] items-center justify-center flex gap-12">
+          <button
+            class="bg-[#779f7d] w-[280px] p-2 mt-[30px] text-white text-xl font-medium rounded-[30px] border-2 border-white"
+          >
+            Randevu Al
+          </button>
+          <button
+            class="bg-white w-[280px] p-2 mt-[30px] text-[#779f7d] text-xl font-medium rounded-[30px] border-2 border-[#779f7d]"
+          >
+            Chat Via Whatsapp
+          </button>
         </div>
       </div>
     </div>
