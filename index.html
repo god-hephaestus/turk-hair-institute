@@ -890,6 +890,100 @@
         </div>
       </div>
     </div>
+
+    <!--- FAQ-->
+    <div
+      class="w-screen flex flex-col md:flex-row items-center h-auto md:h-[700px] gap-10 md:gap-[100px] bg-[#779f7d] p-6"
+    >
+      <!-- Image Section -->
+      <div
+        class="h-[300px] md:h-full w-full md:w-1/2 flex justify-center items-center relative"
+      >
+        <img
+          class="h-[100%] w-[100%] object-cover rounded-tl-[50px] md:rounded-tl-[237px] rounded-tr-[50px] md:rounded-tr-[237px] rounded-bl-[20px] rounded-br-[20px]"
+          src="/asset/img/faq.jpeg"
+        />
+        <div
+          class="absolute flex justify-center items-center bg-[#779f7d] rounded-full w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
+        >
+          <div
+            class="w-0 h-0 border-t-[7px] md:border-t-[15px] border-b-[7px] md:border-b-[15px] border-l-[12px] md:border-l-[25px] border-transparent border-l-white"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Accordion Section -->
+      <div
+        class="h-auto md:h-full w-full md:w-1/2 flex flex-col justify-center items-start"
+      >
+        <h2 class="text-white text-xl mb-4 font-bold">TURK HAIR INSTITUTE</h2>
+        <h3 class="text-white text-[24px] md:text-[28px] font-medium">
+          Sıkça Sorulan Sorular (S.S.S.)
+        </h3>
+
+        <!-- Accordion Component -->
+        <div class="w-full mt-4">
+          <div class="accordion">
+            <!-- Accordion Block 1 (initially open) -->
+            <div class="border-b">
+              <button
+                class="accordion-header w-full text-left p-4 text-white font-medium"
+              >
+                Soru 1: Nedir?
+              </button>
+              <div
+                class="accordion-content overflow-hidden transition-all duration-500 ease-in-out"
+                style="max-height: none"
+              >
+                <div class="p-4 text-white">Cevap 1: Buraya cevap yazılır.</div>
+              </div>
+            </div>
+
+            <!-- Accordion Block 2 -->
+            <div class="border-b">
+              <button
+                class="accordion-header w-full text-left p-4 text-white font-medium"
+              >
+                Soru 2: Nasıl yapılır?
+              </button>
+              <div
+                class="accordion-content overflow-hidden transition-all duration-500 ease-in-out max-h-0"
+              >
+                <div class="p-4 text-white">Cevap 2: Buraya cevap yazılır.</div>
+              </div>
+            </div>
+
+            <!-- Accordion Block 3 -->
+            <div class="border-b">
+              <button
+                class="accordion-header w-full text-left p-4 text-white font-medium"
+              >
+                Soru 3: Kimler yaptırabilir?
+              </button>
+              <div
+                class="accordion-content overflow-hidden transition-all duration-500 ease-in-out max-h-0"
+              >
+                <div class="p-4 text-white">Cevap 3: Buraya cevap yazılır.</div>
+              </div>
+            </div>
+
+            <!-- Accordion Block 4 -->
+            <div class="border-b">
+              <button
+                class="accordion-header w-full text-left p-4 text-white font-medium"
+              >
+                Soru 4: Fiyatlar nedir?
+              </button>
+              <div
+                class="accordion-content overflow-hidden transition-all duration-500 ease-in-out max-h-0"
+              >
+                <div class="p-4 text-white">Cevap 4: Buraya cevap yazılır.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6 mt-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1004,6 +1098,37 @@
       });
 
       updateSliderPosition();
+    </script>
+    <!-- accordion-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordions = document.querySelectorAll(".accordion-header");
+        const contents = document.querySelectorAll(".accordion-content");
+
+        // Set the first accordion to be open by default
+        contents[0].style.maxHeight = contents[0].scrollHeight + "px";
+
+        accordions.forEach((header, index) => {
+          header.addEventListener("click", function () {
+            const content = this.nextElementSibling;
+
+            // Toggle the clicked accordion content
+            if (!content.style.maxHeight || content.style.maxHeight === "0px") {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } else {
+              content.style.maxHeight = "0px";
+            }
+
+            // Close all other accordion items
+            accordions.forEach((item, i) => {
+              const otherContent = item.nextElementSibling;
+              if (i !== index && otherContent.style.maxHeight !== "0px") {
+                otherContent.style.maxHeight = "0px";
+              }
+            });
+          });
+        });
+      });
     </script>
   </body>
 </html>
