@@ -1310,6 +1310,126 @@
       </div>
     </div>
 
+    <!-- Testimonials-->
+    <div class="testimonials overflow-hidden relative">
+      <div
+        class="testimonials__slider flex transition-transform duration-500 ease-in-out"
+      >
+        <!-- Testimonial 1 -->
+        <div class="testimonials__slide flex-shrink-0 w-full flex p-4">
+          <div class="w-1/2 ml-[10%] py-24">
+            <h4 class="text-[#779f7d] text-5xl font-medium">Yorumlarınız</h4>
+            <img
+              class="h-6 mb-4 mt-8"
+              src="/asset/img/stars1.png"
+              alt="Stars"
+            />
+            <p class="text-black text-lg font-normal w-4/5 pr-8">
+              Lorem ipsum dolor sit amet consectetur. Vestibulum ipsum vel
+              tincidunt ut cras eu sollicitudin eget. Nisl eget enim nibh
+              pretium. Natoque tempor a ipsum quam non cursus in aenean. Quam
+              amet vestibulum tellus fermentum odio arcu tristique tincidunt.
+              Elit lectus quam urna massa eu massa interdum tortor at. Cursus.
+            </p>
+            <div class="flex mt-8 items-center">
+              <h6 class="text-[#779f7d] text-xl font-bold">\\ Emely C.</h6>
+              <img
+                class="w-16 h-5 ml-2"
+                src="/asset/img/google.png"
+                alt="Google"
+              />
+            </div>
+          </div>
+          <div class="w-1/2 flex items-center">
+            <img
+              class="rounded-lg w-3/4 h-3/4"
+              src="/asset/img/faq.jpeg"
+              alt="Testimonial Image"
+            />
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonials__slide flex-shrink-0 w-full flex p-4">
+          <div class="w-1/2 ml-[10%] py-24">
+            <h4 class="text-[#779f7d] text-5xl font-medium">Yorumlarınız</h4>
+            <img
+              class="h-6 mb-4 mt-8"
+              src="/asset/img/stars1.png"
+              alt="Stars"
+            />
+            <p class="text-black text-lg font-normal w-4/5 pr-8">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Similique nulla debitis molestiae doloribus voluptatum dolorem
+              sapiente vitae aperiam molestias laborum impedit voluptatibus
+              blanditiis dolor ipsa, assumenda ducimus quibusdam vel quidem?
+            </p>
+            <div class="flex mt-8 items-center">
+              <h6 class="text-[#779f7d] text-xl font-bold">\\ John D.</h6>
+              <img
+                class="w-16 h-5 ml-2"
+                src="/asset/img/google.png"
+                alt="Google"
+              />
+            </div>
+          </div>
+          <div class="w-1/2 flex items-center">
+            <img
+              class="rounded-lg w-3/4 h-3/4"
+              src="/asset/img/faq.jpeg"
+              alt="Testimonial Image"
+            />
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonials__slide flex-shrink-0 w-full flex p-4">
+          <div class="w-1/2 ml-[10%] py-24">
+            <h4 class="text-[#779f7d] text-5xl font-medium">Yorumlarınız</h4>
+            <img
+              class="h-6 mb-4 mt-8"
+              src="/asset/img/stars1.png"
+              alt="Stars"
+            />
+            <p class="text-black text-lg font-normal w-4/5 pr-8">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Similique nulla debitis molestiae doloribus voluptatum dolorem
+              sapiente vitae aperiam molestias laborum impedit voluptatibus
+              blanditiis dolor ipsa, assumenda ducimus quibusdam vel quidem?
+            </p>
+            <div class="flex mt-8 items-center">
+              <h6 class="text-[#779f7d] text-xl font-bold">\\ Luff D.</h6>
+              <img
+                class="w-16 h-5 ml-2"
+                src="/asset/img/google.png"
+                alt="Google"
+              />
+            </div>
+          </div>
+          <div class="w-1/2 flex items-center">
+            <img
+              class="rounded-lg w-3/4 h-3/4"
+              src="/asset/img/faq.jpeg"
+              alt="Testimonial Image"
+            />
+          </div>
+        </div>
+        <!-- Add more testimonial slides as needed -->
+      </div>
+
+      <!-- Navigation buttons -->
+      <button
+        class="testimonials__nav-btn prev absolute top-1/2 left-24 transform -translate-y-1/2 rounded-full border-2 bg-white border-[#779f7d] w-[60px] h-[60px] text-[#779f7d] text-[30px]"
+      >
+        &lt;
+      </button>
+      <button
+        class="testimonials__nav-btn next absolute top-1/2 right-24 transform -translate-y-1/2 rounded-full border-2 bg-white border-[#779f7d] w-[60px] h-[60px] text-[#779f7d] text-[30px]"
+      >
+        &gt;
+      </button>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6 mt-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1482,6 +1602,38 @@
         setupAccordion(".accordion-wrapper-1");
         setupAccordion(".accordion-wrapper-2");
       });
+    </script>
+    <!-- testimonials-->
+    <script>
+      let currentTestimonialIndex = 0;
+      const testimonialsSlider = document.querySelector(
+        ".testimonials__slider"
+      );
+      const testimonialSlides = document.querySelectorAll(
+        ".testimonials__slide"
+      );
+      const totalTestimonials = testimonialSlides.length;
+
+      function slideTestimonials(direction) {
+        if (direction === "next") {
+          currentTestimonialIndex =
+            (currentTestimonialIndex + 1) % totalTestimonials;
+        } else if (direction === "prev") {
+          currentTestimonialIndex =
+            (currentTestimonialIndex - 1 + totalTestimonials) %
+            totalTestimonials;
+        }
+        testimonialsSlider.style.transform = `translateX(-${
+          currentTestimonialIndex * 100
+        }%)`;
+      }
+
+      document
+        .querySelector(".next")
+        .addEventListener("click", () => slideTestimonials("next"));
+      document
+        .querySelector(".prev")
+        .addEventListener("click", () => slideTestimonials("prev"));
     </script>
   </body>
 </html>
