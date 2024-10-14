@@ -8,6 +8,28 @@ h6,
 p,
 a,
 button,
+span,
 div {
   font-family: "Poppins", sans-serif;
+}
+@keyframes auto-scroll {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-100%);
+  }
+}
+
+.product__track {
+  display: flex;
+  width: calc(4 * 25%); /* Four items visible at a time */
+}
+
+.product__item {
+  flex: 0 0 25%; /* Each product takes up 25% of the container */
 }

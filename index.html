@@ -1476,8 +1476,44 @@
         </div>
       </div>
      </div>
+
+    <!-- Products-->
+    <div class="product__container relative overflow-hidden w-full">
+      <div class="product__track flex transition-transform duration-[1s] ease-in-out" id="product__track">
+        <!-- Product Items -->
+        <div class="product__item w-1/4 flex flex-col items-center">
+          <img src="/asset/img/product1.png" alt="Product 1" class="w-[150px] h-auto">
+          <p class="product__title font-semibold text-lg">Ürün 1</p>
+          <p class="product__description text-sm">Lorem Ipsum</p>
+          <p class="product__price text-gray-500">$16.48 <span class="text-[#6ac48a]">$6.48</span></p>
+        </div>
+    
+        <div class="product__item w-1/4 flex flex-col items-center">
+          <img src="/asset/img/product2.png" alt="Product 2" class="w-[150px] h-auto">
+          <p class="product__title font-semibold text-lg">Ürün 2</p>
+          <p class="product__description text-sm">Lorem Ipsum</p>
+          <p class="product__price text-gray-500">$16.48 <span class="text-[#6ac48a]">$6.48</span></p>
+        </div>
+    
+        <div class="product__item w-1/4 flex flex-col items-center">
+          <img src="/asset/img/product1.png" alt="Product 1" class="w-[150px] h-auto">
+          <p class="product__title font-semibold text-lg">Ürün 1</p>
+          <p class="product__description text-sm">Lorem Ipsum</p>
+          <p class="product__price text-gray-500">$16.48 <span class="text-[#6ac48a]">$6.48</span></p>
+        </div>
+    
+        <div class="product__item w-1/4 flex flex-col items-center">
+          <img src="/asset/img/product2.png" alt="Product 2" class="w-[150px] h-auto">
+          <p class="product__title font-semibold text-lg">Ürün 2</p>
+          <p class="product__description text-sm">Lorem Ipsum</p>
+          <p class="product__price text-gray-500">$16.48 <span class="text-[#6ac48a]">$6.48</span></p>
+        </div>
+      </div>
+    </div>
+    
+    
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6 mt-12">
+    <footer class="bg-[#779f7d] text-white py-6 mt-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p class="text-center">&copy; 2024 MySite. All rights reserved.</p>
       </div>
@@ -1680,6 +1716,46 @@
       document
         .querySelector(".prev")
         .addEventListener("click", () => slideTestimonials("prev"));
+    </script>
+    <!-- products-->
+    <script>
+        // Get the slider container and all product items
+        const product__track = document.getElementById('product__track');
+        const product__items = document.querySelectorAll('.product__item');
+        const product__itemsToShow = 4; // Show 4 items at a time
+        let product__itemWidth = product__items[0].offsetWidth; // Get width of each item
+        let product__currentIndex = 0;
+            
+        // Clone the first 4 items to create an infinite loop effect
+        for (let i = 0; i < product__itemsToShow; i++) {
+          const clone = product__items[i].cloneNode(true);
+          product__track.appendChild(clone); // Append cloned items at the end
+        }
+        
+        // Function to slide items automatically
+        const product__slide = () => {
+          product__currentIndex++;
+          product__track.style.transition = 'transform 1s ease-in-out';
+          product__track.style.transform = `translateX(-${product__currentIndex * product__itemWidth}px)`;
+        
+          // If we reach the end of the original items, reset position without transition
+          if (product__currentIndex >= product__items.length) {
+            setTimeout(() => {
+              product__track.style.transition = 'none'; // Remove transition to avoid visual jump
+              product__track.style.transform = 'translateX(0)'; // Reset position
+              product__currentIndex = 0; // Reset index
+              setTimeout(() => product__track.style.transition = 'transform 1s ease-in-out', 0); // Re-enable transition
+            }, 1000); // Wait for the sliding animation to complete before resetting
+          }
+        };
+        
+        // Automatic sliding every 5 seconds
+        setInterval(product__slide, 5000);
+        
+        // Ensure correct item width on window resize
+        window.addEventListener('resize', () => {
+          product__itemWidth = product__items[0].offsetWidth; // Recalculate width on resize
+        });
     </script>
   </body>
 </html>
