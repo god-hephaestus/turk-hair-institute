@@ -1431,87 +1431,191 @@
     </div>
 
     <!-- Form-->
-     <div class="flex flex-row">
+    <div class="flex flex-row mb-24">
       <div class="w-1/3 relative">
-        <img class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[450px] z-10" src="/asset/img/form.png">
-        
-        <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#779F7D] opacity-50 rounded-full w-[300px] h-[300px] z-0"></div>
-        
-        <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-transparent opacity-50 rounded-full w-[350px] h-[350px] border-[5px] border-[#779F7D] z-0"></div>
+        <img
+          class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[450px] z-10"
+          src="/asset/img/form.png"
+        />
+
+        <!-- Move the background circle down by adjusting the translate-y value -->
+        <div
+          class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-[30%] bg-[#779F7D] opacity-50 rounded-full w-[300px] h-[300px] z-0"
+        ></div>
+
+        <!-- Move the border circle down by adjusting the translate-y value -->
+        <div
+          class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-[35%] bg-transparent opacity-50 rounded-full w-[400px] h-[400px] border-[5px] border-[#779F7D] z-0"
+        ></div>
+
+        <button
+          class="absolute left-1/2 bottom-0 transform -translate-x-1/2 mt-0 text-[#779f7d] rounded-[35px] py-3 px-10 font-bold bg-white border-2 border-[#779f7d]"
+        >
+          Chat via Whatsapp
+        </button>
       </div>
-      
+
       <div class="w-2/3 flex items-center justify-center">
         <div class="w-full">
-          <h5 class="text-[#779f7d] text-[45px] font-medium text-center">İletişime Geç</h5>
-          <p class="text-[#779f7d] text-xl font-bold text-center">TURK HAIR INSTITUTE</p>
+          <h5 class="text-[#779f7d] text-[45px] font-medium text-center">
+            İletişime Geç
+          </h5>
+          <p class="text-[#779f7d] text-xl font-bold text-center">
+            TURK HAIR INSTITUTE
+          </p>
           <form class="space-y-2 text-center">
             <div>
-              <label for="name" class="text-[#779F7D]"></label><br>
-              <input type="text" id="name" name="name" required placeholder="İsim Soyisim" 
-                class="w-[70%] bg-[#d9d9d9]/20 rounded-[15px] text-[#779F7D] placeholder-[#779F7D] p-3 focus:outline-none focus:ring-2 focus:ring-[#779F7D]">
+              <label for="name" class="text-[#779F7D]"></label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="İsim Soyisim"
+                class="w-[70%] bg-[#d9d9d9]/20 rounded-[15px] text-[#779F7D] placeholder-[#779F7D] p-3 focus:outline-none focus:ring-2 focus:ring-[#779F7D]"
+              />
             </div>
-            
+
             <div>
-              <label for="mail" class="text-[#779F7D]"></label><br>
-              <input type="email" id="mail" name="mail" required placeholder="E-mail" 
-                class="w-[70%] bg-[#d9d9d9]/20 rounded-[15px] text-[#779F7D] placeholder-[#779F7D] p-3 focus:outline-none focus:ring-2 focus:ring-[#779F7D]">
+              <label for="mail" class="text-[#779F7D]"></label><br />
+              <input
+                type="email"
+                id="mail"
+                name="mail"
+                required
+                placeholder="E-mail"
+                class="w-[70%] bg-[#d9d9d9]/20 rounded-[15px] text-[#779F7D] placeholder-[#779F7D] p-3 focus:outline-none focus:ring-2 focus:ring-[#779F7D]"
+              />
             </div>
-            
+
             <div>
-              <label for="phone" class="text-[#779F7D]"></label><br>
-              <input type="tel" id="phone" name="phone" required placeholder="Telefon Numarası" 
-                class="w-[70%] bg-[#d9d9d9]/20 rounded-[15px] text-[#779F7D] placeholder-[#779F7D] p-3 focus:outline-none focus:ring-2 focus:ring-[#779F7D]">
+              <label for="phone" class="text-[#779F7D]"></label><br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="Telefon Numarası"
+                class="w-[70%] bg-[#d9d9d9]/20 rounded-[15px] text-[#779F7D] placeholder-[#779F7D] p-3 focus:outline-none focus:ring-2 focus:ring-[#779F7D]"
+              />
             </div>
-            
+
             <div>
-              <label for="message" class="text-[#779F7D]"></label><br>
-              <textarea id="message" name="message" rows="4" required placeholder="Mesajınız" 
-                class="w-[70%] bg-[#d9d9d9]/20 rounded-[15px] text-[#779F7D] placeholder-[#779F7D] p-3 focus:outline-none focus:ring-2 focus:ring-[#779F7D]"></textarea>
+              <label for="message" class="text-[#779F7D]"></label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                placeholder="Mesajınız"
+                class="w-[70%] bg-[#d9d9d9]/20 rounded-[15px] text-[#779F7D] placeholder-[#779F7D] p-3 focus:outline-none focus:ring-2 focus:ring-[#779F7D]"
+              ></textarea>
             </div>
-            
-            <button type="submit" class="text-white rounded-[15px] py-3 px-24 font-bold bg-[#779f7d] rounded-[35px] border-2 border-white">
+
+            <button
+              type="submit"
+              class="text-white py-3 px-24 font-bold bg-[#779f7d] rounded-[35px] border-2 border-white"
+            >
               Gönder
             </button>
           </form>
         </div>
       </div>
-     </div>
+    </div>
 
     <!-- Products-->
     <div class="product__container relative overflow-hidden w-full">
-      <div class="product__track flex transition-transform duration-[1s] ease-in-out" id="product__track">
+      <h2 class="text-center text-[#779f7d] text-[50px] font-medium mb-16">
+        Products
+      </h2>
+      <div
+        class="product__track flex transition-transform duration-[1s] ease-in-out mb-16"
+        id="product__track"
+      >
         <!-- Product Items -->
         <div class="product__item w-1/4 flex flex-col items-center">
-          <img src="/asset/img/product1.png" alt="Product 1" class="w-[150px] h-auto">
+          <img
+            src="/asset/img/product1.png"
+            alt="Product 1"
+            class="w-[150px] h-auto"
+          />
           <p class="product__title font-semibold text-lg">Ürün 1</p>
           <p class="product__description text-sm">Lorem Ipsum</p>
-          <p class="product__price text-gray-500">$16.48 <span class="text-[#6ac48a]">$6.48</span></p>
+          <p class="product__price text-[#bdbdbd] text-base font-bold">
+            $16.48 <span class="text-[#23856d] text-base font-bold">$6.48</span>
+          </p>
         </div>
-    
+
         <div class="product__item w-1/4 flex flex-col items-center">
-          <img src="/asset/img/product2.png" alt="Product 2" class="w-[150px] h-auto">
+          <img
+            src="/asset/img/product2.png"
+            alt="Product 2"
+            class="w-[150px] h-auto"
+          />
           <p class="product__title font-semibold text-lg">Ürün 2</p>
           <p class="product__description text-sm">Lorem Ipsum</p>
-          <p class="product__price text-gray-500">$16.48 <span class="text-[#6ac48a]">$6.48</span></p>
+          <p class="product__price text-[#bdbdbd] text-base font-bold">
+            $16.48 <span class="text-[#23856d] text-base font-bold">$6.48</span>
+          </p>
         </div>
-    
+
         <div class="product__item w-1/4 flex flex-col items-center">
-          <img src="/asset/img/product1.png" alt="Product 1" class="w-[150px] h-auto">
+          <img
+            src="/asset/img/product1.png"
+            alt="Product 1"
+            class="w-[150px] h-auto"
+          />
           <p class="product__title font-semibold text-lg">Ürün 1</p>
           <p class="product__description text-sm">Lorem Ipsum</p>
-          <p class="product__price text-gray-500">$16.48 <span class="text-[#6ac48a]">$6.48</span></p>
+          <p class="product__price text-[#bdbdbd] text-base font-bold">
+            $16.48 <span class="text-[#23856d] text-base font-bold">$6.48</span>
+          </p>
         </div>
-    
+
         <div class="product__item w-1/4 flex flex-col items-center">
-          <img src="/asset/img/product2.png" alt="Product 2" class="w-[150px] h-auto">
+          <img
+            src="/asset/img/product2.png"
+            alt="Product 2"
+            class="w-[150px] h-auto"
+          />
           <p class="product__title font-semibold text-lg">Ürün 2</p>
           <p class="product__description text-sm">Lorem Ipsum</p>
-          <p class="product__price text-gray-500">$16.48 <span class="text-[#6ac48a]">$6.48</span></p>
+          <p class="product__price text-[#bdbdbd] text-base font-bold">
+            $16.48 <span class="text-[#23856d] text-base font-bold">$6.48</span>
+          </p>
+        </div>
+
+        <div class="product__item w-1/4 flex flex-col items-center">
+          <img
+            src="/asset/img/product2.png"
+            alt="Product 2"
+            class="w-[150px] h-auto"
+          />
+          <p class="product__title font-semibold text-lg">Ürün 2</p>
+          <p class="product__description text-sm">Lorem Ipsum</p>
+          <p class="product__price text-[#bdbdbd] text-base font-bold">
+            $16.48 <span class="text-[#23856d] text-base font-bold">$6.48</span>
+          </p>
+        </div>
+
+        <div class="product__item w-1/4 flex flex-col items-center">
+          <img
+            src="/asset/img/product2.png"
+            alt="Product 2"
+            class="w-[150px] h-auto"
+          />
+          <p class="product__title font-semibold text-lg">Ürün 2</p>
+          <p class="product__description text-sm">Lorem Ipsum</p>
+          <p class="product__price text-[#bdbdbd] text-base font-bold">
+            $16.48 <span class="text-[#23856d] text-base font-bold">$6.48</span>
+          </p>
         </div>
       </div>
+      <button
+        class="bg-[#779f7d] rounded-[35px] border-2 border-white text-center w-[150px]"
+      ></button>
     </div>
-    
-    
+
     <!-- Footer -->
     <footer class="bg-[#779f7d] text-white py-6 mt-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1719,43 +1823,49 @@
     </script>
     <!-- products-->
     <script>
-        // Get the slider container and all product items
-        const product__track = document.getElementById('product__track');
-        const product__items = document.querySelectorAll('.product__item');
-        const product__itemsToShow = 4; // Show 4 items at a time
-        let product__itemWidth = product__items[0].offsetWidth; // Get width of each item
-        let product__currentIndex = 0;
-            
-        // Clone the first 4 items to create an infinite loop effect
-        for (let i = 0; i < product__itemsToShow; i++) {
-          const clone = product__items[i].cloneNode(true);
-          product__track.appendChild(clone); // Append cloned items at the end
+      // Get the slider container and all product items
+      const product__track = document.getElementById("product__track");
+      const product__items = document.querySelectorAll(".product__item");
+      const product__itemsToShow = 4; // Show 4 items at a time
+      let product__itemWidth = product__items[0].offsetWidth; // Get width of each item
+      let product__currentIndex = 0;
+
+      // Clone the first 4 items to create an infinite loop effect
+      for (let i = 0; i < product__itemsToShow; i++) {
+        const clone = product__items[i].cloneNode(true);
+        product__track.appendChild(clone); // Append cloned items at the end
+      }
+
+      // Function to slide items automatically
+      const product__slide = () => {
+        product__currentIndex++;
+        product__track.style.transition = "transform 1s ease-in-out";
+        product__track.style.transform = `translateX(-${
+          product__currentIndex * product__itemWidth
+        }px)`;
+
+        // If we reach the end of the original items, reset position without transition
+        if (product__currentIndex >= product__items.length) {
+          setTimeout(() => {
+            product__track.style.transition = "none"; // Remove transition to avoid visual jump
+            product__track.style.transform = "translateX(0)"; // Reset position
+            product__currentIndex = 0; // Reset index
+            setTimeout(
+              () =>
+                (product__track.style.transition = "transform 1s ease-in-out"),
+              0
+            ); // Re-enable transition
+          }, 1000); // Wait for the sliding animation to complete before resetting
         }
-        
-        // Function to slide items automatically
-        const product__slide = () => {
-          product__currentIndex++;
-          product__track.style.transition = 'transform 1s ease-in-out';
-          product__track.style.transform = `translateX(-${product__currentIndex * product__itemWidth}px)`;
-        
-          // If we reach the end of the original items, reset position without transition
-          if (product__currentIndex >= product__items.length) {
-            setTimeout(() => {
-              product__track.style.transition = 'none'; // Remove transition to avoid visual jump
-              product__track.style.transform = 'translateX(0)'; // Reset position
-              product__currentIndex = 0; // Reset index
-              setTimeout(() => product__track.style.transition = 'transform 1s ease-in-out', 0); // Re-enable transition
-            }, 1000); // Wait for the sliding animation to complete before resetting
-          }
-        };
-        
-        // Automatic sliding every 5 seconds
-        setInterval(product__slide, 5000);
-        
-        // Ensure correct item width on window resize
-        window.addEventListener('resize', () => {
-          product__itemWidth = product__items[0].offsetWidth; // Recalculate width on resize
-        });
+      };
+
+      // Automatic sliding every 5 seconds
+      setInterval(product__slide, 5000);
+
+      // Ensure correct item width on window resize
+      window.addEventListener("resize", () => {
+        product__itemWidth = product__items[0].offsetWidth; // Recalculate width on resize
+      });
     </script>
   </body>
 </html>
