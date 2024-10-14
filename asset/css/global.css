@@ -33,3 +33,48 @@ div {
 .product__item {
   flex: 0 0 25%; /* Each product takes up 25% of the container */
 }
+
+/* Global CSS */
+
+/* Smooth transition for the category button background, text, and SVG fill */
+.operations__category {
+  transition: background-color 1s !important, color 1s !important,
+    border-color 1s !important; /* Transition for background, text, and border color */
+  cursor: pointer !important; /* Make buttons appear clickable */
+}
+
+.operations__category svg path {
+  transition: fill 1s !important; /* Smooth transition for SVG fill color */
+}
+
+/* Active state styles */
+.active-operation {
+  background-color: #779f7d !important; /* Reversed background color */
+  color: white !important; /* Reversed text color */
+  border-color: white !important;
+}
+
+.active-operation svg path {
+  fill: white !important; /* Change SVG color when active */
+}
+
+.active-operation .operations__name {
+  color: white !important; /* Change text under SVG to white */
+}
+
+/* Add hover effect for buttons */
+.operations__category:hover {
+  opacity: 0.8 !important; /* Slight visual change on hover */
+  cursor: pointer !important;
+}
+
+/* Text and image blur-unblur transition when content changes */
+.operations__text,
+.operations__decorative-container {
+  transition: filter 0.5s ease-in-out !important; /* Add transition for blur effect */
+}
+
+.operations__text--blur,
+.operations__decorative-container--blur {
+  filter: blur(8px) !important; /* Blur effect when changing content */
+}
