@@ -20,219 +20,121 @@
     />
   </head>
   <body>
-    <nav
-      id="navbar"
-      class="fixed top-0 left-0 w-full z-50 bg-transparent transition-colors duration-300"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="navbar__container flex justify-between h-auto lg:h-[200px] top-0 items-center"
-        >
-          <!-- Left Menu -->
-          <div class="navbar__menu-left hidden lg:flex space-x-4">
-            <a
-              href="#"
-              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
-              >Anasayfa</a
-            >
-            <a
-              href="#"
-              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
-              >Hakkımızda</a
-            >
-            <a
-              href="#"
-              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
-              >Tedaviler</a
-            >
-          </div>
-
-          <!-- Center Logo -->
-          <div class="navbar__logo-container shrink-0">
-            <img
-              src="/asset/img/logo.png"
-              alt="Logo"
-              class="navbar__logo w-auto lg:h-[180px] h-[80px]"
-              style="filter: brightness(0) invert(1)"
-            />
-          </div>
-
-          <!-- Right Menu -->
-          <div class="navbar__menu-right hidden lg:flex space-x-4">
-            <a
-              href="#"
-              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
-              >Hastane</a
-            >
-            <a
-              href="#"
-              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
-              >S.S.S.</a
-            >
-            <a
-              href="#"
-              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
-              >İletişim</a
-            >
-          </div>
-
-          <!-- Hamburger Menu Button -->
-          <div class="lg:hidden flex items-center">
-            <button
-              id="hamburger"
-              class="text-white focus:outline-none"
-              aria-label="Open mobile menu"
-            >
-              <svg
-                id="hamburgerIcon"
-                class="w-6 h-6 transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-
-              <svg
-                id="crossIcon"
-                class="w-6 h-6 hidden transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div
-        id="mobileMenu"
-        class="lg:hidden transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 ease-in-out bg-[#225087]"
+    <!-- Hero Section -->
+    <header class="relative bg-gray-800 text-white" style="height: calc(100vh)">
+      <!-- Background Video -->
+      <video
+        autoplay
+        muted
+        loop
+        class="absolute inset-0 w-full h-full object-cover"
       >
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <source src="/asset/hero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Content Overlay -->
+      <div
+        class="relative z-0 flex flex-col text-center items-center justify-center h-full space-y-8 px-4"
+      >
+        <h1 class="text-[40px] md:text-[64px] font-bold">2005'ten Bugüne</h1>
+        <p class="text-base md:text-xl font-medium mt-2 w-full max-w-[460px]">
+          Sağlık Bakanlığı yönetmelikleri gereği sadece doktorla operasyon
+          yapıyoruz. Saçınızın bizi temsil ettiğini iyi biliyoruz.
+        </p>
+
+        <!-- Button Flex Div -->
+        <div
+          class="flex flex-col md:flex-row md:space-x-4 mt-4 space-y-4 md:space-y-0 w-full max-w-[460px]"
+        >
           <a
             href="#"
-            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
-            >Anasayfa</a
+            class="text-white py-2 px-4 w-full md:w-auto h-[50px] bg-[#225087] rounded-[30px] border-2 border-[#225087] flex items-center justify-center"
+            ><p class="text-base md:text-xl font-medium">Randevu Al</p></a
           >
           <a
             href="#"
-            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
-            >Hakkımızda</a
-          >
-          <a
-            href="#"
-            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
-            >Tedaviler</a
-          >
-          <a
-            href="#"
-            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
-            >Hastane</a
-          >
-          <a
-            href="#"
-            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
-            >S.S.S.</a
-          >
-          <a
-            href="#"
-            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
-            >İletişim</a
+            class="text-[#225087] py-2 px-4 w-full md:w-auto h-[50px] bg-white rounded-[30px] flex items-center justify-center"
+            ><p class="text-base md:text-xl font-medium">
+              Chat Via Whatsapp
+            </p></a
           >
         </div>
+
+        <!-- Centered Image -->
+        <div class="mt-8">
+          <img
+            src="/asset/img/stars.png"
+            alt="Centered Image"
+            class="mx-auto w-full max-w-[460px]"
+          />
+        </div>
       </div>
-    </nav>
+    </header>
 
-    <script>
-      const hamburger = document.getElementById("hamburger");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const hamburgerIcon = document.getElementById("hamburgerIcon");
-      const crossIcon = document.getElementById("crossIcon");
+    <!-- Icon Boxes-->
+    <div
+      class="w-full bg-white rounded-[29px] mt-[-50px] mx-auto max-w-[1133px] py-8 relative z-10 shadow-xl"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="text-center py-4 lg:py-0">
+          <img
+            src="https://via.placeholder.com/50x50/225087/ffffff"
+            alt="Placeholder"
+            class="mx-auto mb-4"
+          />
+          <h4 class="text-[#225087] text-lg font-bold">Lorem Ipsum</h4>
+          <p class="w-[206px] mx-auto text-black text-[11px] font-medium">
+            Sağlık Bakanlığı yönetmelikleri gereği sadece doktorla<br />operasyon
+            yapıyoruz.
+          </p>
+        </div>
+        <div
+          class="text-center lg:border-l-2 md:border-t-0 py-4 lg:py-0 border-t-2 border-[#225087]"
+        >
+          <img
+            src="https://via.placeholder.com/50x50/225087/ffffff"
+            alt="Placeholder"
+            class="mx-auto mb-4"
+          />
+          <h4 class="text-[#225087] text-lg font-bold">Lorem Ipsum</h4>
+          <p class="w-[206px] mx-auto text-black text-[11px] font-medium">
+            Sağlık Bakanlığı yönetmelikleri gereği sadece doktorla<br />operasyon
+            yapıyoruz.
+          </p>
+        </div>
 
-      hamburger.addEventListener("click", () => {
-        if (mobileMenu.classList.contains("opacity-0")) {
-          mobileMenu.classList.remove(
-            "-translate-y-full",
-            "opacity-0",
-            "pointer-events-none"
-          );
-          mobileMenu.classList.add(
-            "translate-y-0",
-            "opacity-100",
-            "pointer-events-auto"
-          );
+        <div
+          class="text-center lg:border-l-2 lg:border-t-0 py-4 lg:py-0 border-t-2 border-[#225087]"
+        >
+          <img
+            src="https://via.placeholder.com/50x50/225087/ffffff"
+            alt="Placeholder"
+            class="mx-auto mb-4"
+          />
+          <h4 class="text-[#225087] text-lg font-bold">Lorem Ipsum</h4>
+          <p class="w-[206px] mx-auto text-black text-[11px] font-medium">
+            Sağlık Bakanlığı yönetmelikleri gereği sadece doktorla<br />operasyon
+            yapıyoruz.
+          </p>
+        </div>
 
-          hamburgerIcon.classList.add("hidden");
-          crossIcon.classList.remove("hidden");
-        } else {
-          mobileMenu.classList.add(
-            "-translate-y-full",
-            "opacity-0",
-            "pointer-events-none"
-          );
-          mobileMenu.classList.remove(
-            "translate-y-0",
-            "opacity-100",
-            "pointer-events-auto"
-          );
-          crossIcon.classList.add("hidden");
-          hamburgerIcon.classList.remove("hidden");
-        }
-      });
-
-      window.addEventListener("scroll", function () {
-        const navbar = document.getElementById("navbar");
-        const navLinks = document.querySelectorAll(".nav-links");
-        const logo = navbar.querySelector(".navbar__logo");
-        const navbarContainer = navbar.querySelector(".navbar__container");
-        // Check if window width is lg or larger (1024px and up)
-        if (window.innerWidth >= 1024) {
-          if (window.scrollY > 50) {
-            navbar.classList.add("bg-white", "shadow");
-            navbarContainer.classList.remove("lg:h-[200px]");
-            navbarContainer.classList.add("lg:h-[100px]");
-
-            navLinks.forEach((link) => {
-              link.classList.remove("text-white");
-              link.classList.add("text-black");
-            });
-
-            logo.style.filter = "none";
-            logo.classList.remove("lg:h-[180px]");
-            logo.classList.add("lg:h-[100px]", "w-auto");
-          } else {
-            navbar.classList.remove("bg-white", "shadow");
-            navbarContainer.classList.remove("lg:h-[100px]");
-            navbarContainer.classList.add("lg:h-[200px]");
-
-            navLinks.forEach((link) => {
-              link.classList.remove("text-black");
-              link.classList.add("text-white");
-            });
-
-            logo.style.filter = "brightness(0) invert(1)";
-            logo.classList.remove("lg:h-[100px]", "w-auto");
-            logo.classList.add("lg:h-[180px]");
-          }
-        }
-      });
-    </script>
+        <div
+          class="text-center lg:border-l-2 border-t-2 lg:border-t-0 py-4 lg:py-0 border-[#225087]"
+        >
+          <img
+            src="https://via.placeholder.com/50x50/225087/ffffff"
+            alt="Placeholder"
+            class="mx-auto mb-4"
+          />
+          <h4 class="text-[#225087] text-lg font-bold">Lorem Ipsum</h4>
+          <p class="w-[206px] mx-auto text-black text-[11px] font-medium">
+            Sağlık Bakanlığı yönetmelikleri gereği sadece doktorla<br />operasyon
+            yapıyoruz.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <div class="w-full min-h-screen bg-orange-500"></div>
     <div class="w-full min-h-screen bg-green-500"></div>

@@ -175,44 +175,49 @@
 
       <!-- Content Overlay -->
       <div
-        class="relative z-0 flex flex-col text-center items-center justify-center h-full space-y-8"
+        class="relative z-0 flex flex-col text-center items-center justify-center h-full space-y-8 px-4"
       >
-        <h1 class="text-[64px] font-bold">2005'ten Bugüne</h1>
-        <p class="text-xl font-medium mt-2 w-[460px]">
+        <h1 class="text-[40px] md:text-[64px] font-bold">2005'ten Bugüne</h1>
+        <p class="text-base md:text-xl font-medium mt-2 w-full max-w-[460px]">
           Sağlık Bakanlığı yönetmelikleri gereği sadece doktorla operasyon
           yapıyoruz. Saçınızın bizi temsil ettiğini iyi biliyoruz.
         </p>
 
         <!-- Button Flex Div -->
-        <div class="flex space-x-4 mt-4">
+        <div
+          class="flex flex-col md:flex-row md:space-x-4 mt-4 space-y-4 md:space-y-0 w-full max-w-[460px]"
+        >
           <a
             href="#"
-            class="text-white py-2 px-4 w-[260px] h-[50px] bg-[#225087] rounded-[30px] border-2 border-[#225087]"
-            ><p class="text-xl font-medium">Randevu Al</p></a
+            class="text-white py-2 px-4 w-full md:w-auto h-[50px] bg-[#225087] rounded-[30px] border-2 border-[#225087] flex items-center justify-center"
+            ><p class="text-base md:text-xl font-medium">Randevu Al</p></a
           >
           <a
             href="#"
-            class="text-[#225087] py-2 px-4 w-[260px] h-[50px] bg-white rounded-[30px]"
-            ><p class="text-xl font-medium">Chat Via Whatsapp</p></a
+            class="text-[#225087] py-2 px-4 w-full md:w-auto h-[50px] bg-white rounded-[30px] flex items-center justify-center"
+            ><p class="text-base md:text-xl font-medium">
+              Chat Via Whatsapp
+            </p></a
           >
         </div>
 
         <!-- Centered Image -->
-        <div class="" style="margin-top: 50px !important">
+        <div class="mt-8">
           <img
             src="/asset/img/stars.png"
             alt="Centered Image"
-            class="mx-auto w-[460px]"
+            class="mx-auto w-full max-w-[460px]"
           />
         </div>
       </div>
     </header>
+
     <!-- Icon Boxes-->
     <div
       class="w-full bg-white rounded-[29px] mt-[-50px] mx-auto max-w-[1133px] py-8 relative z-10 shadow-xl"
     >
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
-        <div class="text-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="text-center py-4 lg:py-0">
           <img
             src="https://via.placeholder.com/50x50/225087/ffffff"
             alt="Placeholder"
@@ -224,7 +229,9 @@
             yapıyoruz.
           </p>
         </div>
-        <div class="text-center border-l-2 border-[#225087]">
+        <div
+          class="text-center lg:border-l-2 md:border-t-0 py-4 lg:py-0 border-t-2 border-[#225087]"
+        >
           <img
             src="https://via.placeholder.com/50x50/225087/ffffff"
             alt="Placeholder"
@@ -237,7 +244,9 @@
           </p>
         </div>
 
-        <div class="text-center border-l-2 border-[#225087]">
+        <div
+          class="text-center lg:border-l-2 lg:border-t-0 py-4 lg:py-0 border-t-2 border-[#225087]"
+        >
           <img
             src="https://via.placeholder.com/50x50/225087/ffffff"
             alt="Placeholder"
@@ -250,7 +259,9 @@
           </p>
         </div>
 
-        <div class="text-center border-l-2 border-[#225087]">
+        <div
+          class="text-center lg:border-l-2 border-t-2 lg:border-t-0 py-4 lg:py-0 border-[#225087]"
+        >
           <img
             src="https://via.placeholder.com/50x50/225087/ffffff"
             alt="Placeholder"
