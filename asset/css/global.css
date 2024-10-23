@@ -49,7 +49,7 @@ div {
 
 /* Active state styles */
 .active-operation {
-  background-color: #779f7d !important; /* Reversed background color */
+  background-color: #225087 !important; /* Reversed background color */
   color: white !important; /* Reversed text color */
   border-color: white !important;
 }
