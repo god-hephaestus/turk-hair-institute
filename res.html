@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Turk Hair Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/asset/css/global.css" />
+    <!-- lity-->
+    <link href="/asset/css/lity.min.css" rel="stylesheet" />
+    <script src="/asset/js/jquery.js"></script>
+    <script src="/asset/js/lity.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 bg-transparent transition-colors duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="navbar__container flex justify-between h-auto lg:h-[200px] top-0 items-center"
+        >
+          <!-- Left Menu -->
+          <div class="navbar__menu-left hidden lg:flex space-x-4">
+            <a
+              href="#"
+              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
+              >Anasayfa</a
+            >
+            <a
+              href="#"
+              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
+              >Hakkımızda</a
+            >
+            <a
+              href="#"
+              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
+              >Tedaviler</a
+            >
+          </div>
+
+          <!-- Center Logo -->
+          <div class="navbar__logo-container shrink-0">
+            <img
+              src="/asset/img/logo.png"
+              alt="Logo"
+              class="navbar__logo w-auto lg:h-[180px] h-[80px]"
+              style="filter: brightness(0) invert(1)"
+            />
+          </div>
+
+          <!-- Right Menu -->
+          <div class="navbar__menu-right hidden lg:flex space-x-4">
+            <a
+              href="#"
+              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
+              >Hastane</a
+            >
+            <a
+              href="#"
+              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
+              >S.S.S.</a
+            >
+            <a
+              href="#"
+              class="text-white px-3 py-2 rounded-md text-sm font-semibold nav-links"
+              >İletişim</a
+            >
+          </div>
+
+          <!-- Hamburger Menu Button -->
+          <div class="lg:hidden flex items-center">
+            <button
+              id="hamburger"
+              class="text-white focus:outline-none"
+              aria-label="Open mobile menu"
+            >
+              <svg
+                id="hamburgerIcon"
+                class="w-6 h-6 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+
+              <svg
+                id="crossIcon"
+                class="w-6 h-6 hidden transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="lg:hidden transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 ease-in-out bg-[#225087]"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#"
+            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
+            >Anasayfa</a
+          >
+          <a
+            href="#"
+            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
+            >Hakkımızda</a
+          >
+          <a
+            href="#"
+            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
+            >Tedaviler</a
+          >
+          <a
+            href="#"
+            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
+            >Hastane</a
+          >
+          <a
+            href="#"
+            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
+            >S.S.S.</a
+          >
+          <a
+            href="#"
+            class="text-white block px-3 py-2 rounded-md text-base font-semibold"
+            >İletişim</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const hamburgerIcon = document.getElementById("hamburgerIcon");
+      const crossIcon = document.getElementById("crossIcon");
+
+      hamburger.addEventListener("click", () => {
+        if (mobileMenu.classList.contains("opacity-0")) {
+          mobileMenu.classList.remove(
+            "-translate-y-full",
+            "opacity-0",
+            "pointer-events-none"
+          );
+          mobileMenu.classList.add(
+            "translate-y-0",
+            "opacity-100",
+            "pointer-events-auto"
+          );
+
+          hamburgerIcon.classList.add("hidden");
+          crossIcon.classList.remove("hidden");
+        } else {
+          mobileMenu.classList.add(
+            "-translate-y-full",
+            "opacity-0",
+            "pointer-events-none"
+          );
+          mobileMenu.classList.remove(
+            "translate-y-0",
+            "opacity-100",
+            "pointer-events-auto"
+          );
+          crossIcon.classList.add("hidden");
+          hamburgerIcon.classList.remove("hidden");
+        }
+      });
+
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        const navLinks = document.querySelectorAll(".nav-links");
+        const logo = navbar.querySelector(".navbar__logo");
+        const navbarContainer = navbar.querySelector(".navbar__container");
+        // Check if window width is lg or larger (1024px and up)
+        if (window.innerWidth >= 1024) {
+          if (window.scrollY > 50) {
+            navbar.classList.add("bg-white", "shadow");
+            navbarContainer.classList.remove("lg:h-[200px]");
+            navbarContainer.classList.add("lg:h-[100px]");
+
+            navLinks.forEach((link) => {
+              link.classList.remove("text-white");
+              link.classList.add("text-black");
+            });
+
+            logo.style.filter = "none";
+            logo.classList.remove("lg:h-[180px]");
+            logo.classList.add("lg:h-[100px]", "w-auto");
+          } else {
+            navbar.classList.remove("bg-white", "shadow");
+            navbarContainer.classList.remove("lg:h-[100px]");
+            navbarContainer.classList.add("lg:h-[200px]");
+
+            navLinks.forEach((link) => {
+              link.classList.remove("text-black");
+              link.classList.add("text-white");
+            });
+
+            logo.style.filter = "brightness(0) invert(1)";
+            logo.classList.remove("lg:h-[100px]", "w-auto");
+            logo.classList.add("lg:h-[180px]");
+          }
+        }
+      });
+    </script>
+
+    <div class="w-full min-h-screen bg-orange-500"></div>
+    <div class="w-full min-h-screen bg-green-500"></div>
+  </body>
+</html>
