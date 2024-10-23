@@ -375,66 +375,106 @@
         </div>
       </div>
     </div>
-    <!-- Slider-->
-    <div class="relative flex flex-col items-center py-12">
-      <!-- Title Text -->
-      <h4 class="text-[#225087] text-xl font-bold mb-1">TURK HAIR INSTITUTE</h4>
+    <!-- Text Slider-->
+    <div class="info-carousel relative flex flex-col items-center py-12">
+      <!-- Title Block -->
+      <h4 class="info-carousel__title text-[#225087] text-xl font-bold mb-1">
+        TURK HAIR INSTITUTE
+      </h4>
 
-      <!-- Subtitle Text -->
-      <h5 class="text-[#225087] text-lg mb-4">Sakal Ekimi</h5>
+      <!-- Subtitle Block -->
+      <h5 class="info-carousel__subtitle text-[#225087] text-lg mb-4">
+        Sakal Ekimi
+      </h5>
 
-      <!-- Main Text with Arrows -->
-      <div class="flex items-center">
-        <!-- Left Arrow -->
-        <div class="bg-[#225087] rounded-full p-4 cursor-pointer mr-2">
-          <svg
-            class="w-8 h-8 text-white"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+      <!-- Info Items Wrapper -->
+      <div
+        class="info-carousel__items-container w-full max-w-3xl overflow-hidden h-[300px] lg:h-[200px]"
+      >
+        <!-- Info Items -->
+        <div
+          class="info-carousel__items flex transition-transform duration-500 ease-in-out"
+          style="width: 100%"
+        >
+          <div
+            class="info-carousel__item flex-shrink-0 w-full text-center text-black text-base lg:text-lg px-4"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="3"
-              d="M15 19l-7-7 7-7"
-            ></path>
-          </svg>
-        </div>
-
-        <p class="text-center text-black text-base lg:text-lg max-w-3xl mb-8">
-          Sakal ekimi köselik, seyrek veya dağınık sakal durumlarında sıkça
-          uygulanmakta olan kesin ve kalıcı bir tedavi yöntemidir. Hormonların
-          ideal seviyeye ulaştığı 21-22 yaşlarından itibaren yapılabilir. Sakal
-          ekimi en çok köselik problemi yaşayan erkekler tarafından tercih
-          edilse de, günümüzde seyrek veya dağınık sakal sorunuyla karşı karşıya
-          kalan birçok erkek de sakal ekimi yaptırmakta ve daha doğal, estetik
-          sakallara kavuşmaktadır.
-        </p>
-
-        <!-- Right Arrow -->
-        <div class="bg-[#225087] rounded-full p-4 cursor-pointer ml-2">
-          <svg
-            class="w-8 h-8 text-white"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+            Sakal ekimi köselik, seyrek veya dağınık sakal durumlarında sıkça
+            uygulanmakta olan kesin ve kalıcı bir tedavi yöntemidir. Hormonların
+            ideal seviyeye ulaştığı 21-22 yaşlarından itibaren yapılabilir.
+            Sakal ekimi en çok köselik problemi yaşayan erkekler tarafından
+            tercih edilse de, günümüzde seyrek veya dağınık sakal sorunuyla
+            karşı karşıya kalan birçok erkek de sakal ekimi yaptırmakta ve daha
+            doğal, estetik sakallara kavuşmaktadır.
+          </div>
+          <div
+            class="info-carousel__item flex-shrink-0 w-full text-center text-black text-base lg:text-lg px-4"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="3"
-              d="M9 5l7 7-7 7"
-            ></path>
-          </svg>
+            Sakal ekimi köselik, seyrek veya dağınık sakal durumlarında sıkça
+            uygulanmakta olan kesin ve kalıcı bir tedavi yöntemidir. Hormonların
+            ideal seviyeye ulaştığı 21-22 yaşlarından itibaren yapılabilir.
+            Sakal ekimi en çok köselik problemi yaşayan erkekler tarafından
+            tercih edilse de, günümüzde seyrek veya dağınık sakal sorunuyla
+            karşı karşıya kalan birçok erkek de sakal ekimi yaptırmakta ve daha
+            doğal, estetik sakallara kavuşmaktadır.
+          </div>
+          <div
+            class="info-carousel__item flex-shrink-0 w-full text-center text-black text-base lg:text-lg px-4"
+          >
+            Sakal ekimi köselik, seyrek veya dağınık sakal durumlarında sıkça
+            uygulanmakta olan kesin ve kalıcı bir tedavi yöntemidir. Hormonların
+            ideal seviyeye ulaştığı 21-22 yaşlarından itibaren yapılabilir.
+            Sakal ekimi en çok köselik problemi yaşayan erkekler tarafından
+            tercih edilse de, günümüzde seyrek veya dağınık sakal sorunuyla
+            karşı karşıya kalan birçok erkek de sakal ekimi yaptırmakta ve daha
+            doğal, estetik sakallara kavuşmaktadır.
+          </div>
         </div>
       </div>
 
-      <!-- Button -->
+      <!-- Left Arrow -->
+      <div
+        class="info-carousel__arrow info-carousel__arrow--left bg-[#225087] hover:bg-[#2b66ad] rounded-full p-4 cursor-pointer absolute left-4 lg:left-[5%] xl:left-[20%] top-[15%] lg:top-1/2 transform -translate-y-1/2"
+      >
+        <svg
+          class="w-8 h-8 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+            d="M15 19l-7-7 7-7"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Right Arrow -->
+      <div
+        class="info-carousel__arrow info-carousel__arrow--right bg-[#225087] hover:bg-[#2b66ad] rounded-full p-4 cursor-pointer absolute right-4 lg:right-[5%] xl:right-[20%] top-[15%] lg:top-1/2 transform -translate-y-1/2"
+      >
+        <svg
+          class="w-8 h-8 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+            d="M9 5l7 7-7 7"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Button Block -->
       <button
-        class="bg-[#225087] text-white py-3 px-8 rounded-[30px] mb-8 hover:bg-[#5e8263] transition"
+        class="info-carousel__button bg-[#225087] text-white py-3 px-8 rounded-[30px] mt-8 hover:bg-[#2b66ad] transition"
       >
         Tedavileri İnceleyin
       </button>
@@ -2169,7 +2209,48 @@
         }
       });
     </script>
+    <!-- text slider behavior-->
+    <script>
+      const infoCarouselItemsContainer = document.querySelector(
+        ".info-carousel__items"
+      );
+      const infoCarouselArrowLeft = document.querySelector(
+        ".info-carousel__arrow--left"
+      );
+      const infoCarouselArrowRight = document.querySelector(
+        ".info-carousel__arrow--right"
+      );
+      const infoCarouselItems = document.querySelectorAll(
+        ".info-carousel__item"
+      );
+      let infoCarouselCurrentIndex = 0;
+      const infoCarouselTotalItems = infoCarouselItems.length;
 
+      function updateInfoCarouselPosition() {
+        infoCarouselItemsContainer.style.transform = `translateX(-${
+          infoCarouselCurrentIndex * 100
+        }%)`;
+      }
+
+      infoCarouselArrowLeft.addEventListener("click", () => {
+        infoCarouselCurrentIndex =
+          infoCarouselCurrentIndex > 0
+            ? infoCarouselCurrentIndex - 1
+            : infoCarouselTotalItems - 1;
+        updateInfoCarouselPosition();
+      });
+
+      infoCarouselArrowRight.addEventListener("click", () => {
+        infoCarouselCurrentIndex =
+          infoCarouselCurrentIndex < infoCarouselTotalItems - 1
+            ? infoCarouselCurrentIndex + 1
+            : 0;
+        updateInfoCarouselPosition();
+      });
+
+      // Initial setup
+      updateInfoCarouselPosition();
+    </script>
     <!--slider behavior -->
     <script>
       const slider = document.getElementById("slider");

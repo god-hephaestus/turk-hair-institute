@@ -20,223 +20,152 @@
     />
   </head>
   <body>
-    <!-- Hero Section -->
-    <header class="relative bg-gray-800 text-white" style="height: calc(100vh)">
-      <!-- Background Video -->
-      <video
-        autoplay
-        muted
-        loop
-        class="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/asset/hero.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      <!-- Content Overlay -->
-      <div
-        class="relative z-0 flex flex-col text-center items-center justify-center h-full space-y-8 px-4"
-      >
-        <h1 class="text-[40px] md:text-[64px] font-bold">2005'ten Bugüne</h1>
-        <p class="text-base md:text-xl font-medium mt-2 w-full max-w-[460px]">
-          Sağlık Bakanlığı yönetmelikleri gereği sadece doktorla operasyon
-          yapıyoruz. Saçınızın bizi temsil ettiğini iyi biliyoruz.
-        </p>
-
-        <!-- Button Flex Div -->
-        <div
-          class="flex flex-col md:flex-row md:space-x-4 mt-4 space-y-4 md:space-y-0 w-full max-w-[460px]"
-        >
-          <a
-            href="#"
-            class="text-white py-2 px-4 w-full md:w-auto h-[50px] bg-[#225087] rounded-[30px] border-2 border-[#225087] flex items-center justify-center"
-            ><p class="text-base md:text-xl font-medium">Randevu Al</p></a
-          >
-          <a
-            href="#"
-            class="text-[#225087] py-2 px-4 w-full md:w-auto h-[50px] bg-white rounded-[30px] flex items-center justify-center"
-            ><p class="text-base md:text-xl font-medium">
-              Chat Via Whatsapp
-            </p></a
-          >
-        </div>
-
-        <!-- Centered Image -->
-        <div class="mt-8">
-          <img
-            src="/asset/img/stars.png"
-            alt="Centered Image"
-            class="mx-auto w-full max-w-[460px]"
-          />
-        </div>
-      </div>
-    </header>
-
-    <!-- Icon Boxes-->
-    <div
-      class="w-full bg-white rounded-[29px] mt-[-50px] mx-auto max-w-[1133px] py-8 relative z-10 shadow-xl"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-        <div class="text-center py-4 lg:py-0">
-          <img
-            src="https://via.placeholder.com/50x50/225087/ffffff"
-            alt="Placeholder"
-            class="mx-auto mb-4"
-          />
-          <h4 class="text-[#225087] text-lg font-bold">Lorem Ipsum</h4>
-          <p class="w-[206px] mx-auto text-black text-[11px] font-medium">
-            Sağlık Bakanlığı yönetmelikleri gereği sadece doktorla<br />operasyon
-            yapıyoruz.
-          </p>
-        </div>
-        <div
-          class="text-center lg:border-l-2 md:border-t-0 py-4 lg:py-0 border-t-2 border-[#225087]"
-        >
-          <img
-            src="https://via.placeholder.com/50x50/225087/ffffff"
-            alt="Placeholder"
-            class="mx-auto mb-4"
-          />
-          <h4 class="text-[#225087] text-lg font-bold">Lorem Ipsum</h4>
-          <p class="w-[206px] mx-auto text-black text-[11px] font-medium">
-            Sağlık Bakanlığı yönetmelikleri gereği sadece doktorla<br />operasyon
-            yapıyoruz.
-          </p>
-        </div>
-
-        <div
-          class="text-center lg:border-l-2 lg:border-t-0 py-4 lg:py-0 border-t-2 border-[#225087]"
-        >
-          <img
-            src="https://via.placeholder.com/50x50/225087/ffffff"
-            alt="Placeholder"
-            class="mx-auto mb-4"
-          />
-          <h4 class="text-[#225087] text-lg font-bold">Lorem Ipsum</h4>
-          <p class="w-[206px] mx-auto text-black text-[11px] font-medium">
-            Sağlık Bakanlığı yönetmelikleri gereği sadece doktorla<br />operasyon
-            yapıyoruz.
-          </p>
-        </div>
-
-        <div
-          class="text-center lg:border-l-2 border-t-2 lg:border-t-0 py-4 lg:py-0 border-[#225087]"
-        >
-          <img
-            src="https://via.placeholder.com/50x50/225087/ffffff"
-            alt="Placeholder"
-            class="mx-auto mb-4"
-          />
-          <h4 class="text-[#225087] text-lg font-bold">Lorem Ipsum</h4>
-          <p class="w-[206px] mx-auto text-black text-[11px] font-medium">
-            Sağlık Bakanlığı yönetmelikleri gereği sadece doktorla<br />operasyon
-            yapıyoruz.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- Image Cards-->
-    <div
-      class="w-full bg-white rounded-[30px] mx-auto max-w-[1133px] py-8 mt-12"
-    >
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[26px]"
-      >
-        <!-- First Box -->
-        <div class="col-span-1 relative w-full h-[450px] lg:h-[625px]">
-          <img
-            src="/asset/img/card1.jpeg"
-            alt="Placeholder Image"
-            class="absolute inset-0 w-full h-full object-cover rounded-[30px]"
-          />
-          <div
-            class="absolute bottom-0 w-full p-4 text-center bg-[#225087] rounded-[20px]"
-          >
-            <p
-              class="text-white text-lg lg:text-2xl xl:text-3xl font-bold my-2"
-            >
-              Saç Ekimi
-            </p>
-            <button
-              class="py-1.5 px-4 md:py-2 md:px-6 w-auto bg-white rounded-[30px] border-2 border-[#225087] text-[#225087] text-sm md:text-base"
-            >
-              Detaylı Bilgi
-            </button>
-          </div>
-        </div>
-
-        <!-- Second Box -->
-        <div class="col-span-1 relative w-full h-[450px] lg:h-[625px]">
-          <img
-            src="/asset/img/card2.jpeg"
-            alt="Placeholder Image"
-            class="absolute inset-0 w-full h-full object-cover rounded-[30px]"
-          />
-          <div
-            class="absolute bottom-0 w-full p-4 text-center bg-[#225087] rounded-[20px]"
-          >
-            <p
-              class="text-white text-lg lg:text-2xl xl:text-3xl font-bold my-2"
-            >
-              Sakal Ekimi
-            </p>
-            <button
-              class="py-1.5 px-4 md:py-2 md:px-6 w-auto bg-white rounded-[30px] border-2 border-[#225087] text-[#225087] text-sm md:text-base"
-            >
-              Detaylı Bilgi
-            </button>
-          </div>
-        </div>
-
-        <!-- Third Box -->
-        <div class="col-span-1 relative w-full h-[450px] lg:h-[625px]">
-          <img
-            src="/asset/img/card3.jpeg"
-            alt="Placeholder Image"
-            class="absolute inset-0 w-full h-full object-cover rounded-[30px]"
-          />
-          <div
-            class="absolute bottom-0 w-full p-4 text-center bg-[#225087] rounded-[20px]"
-          >
-            <p
-              class="text-white text-lg lg:text-2xl xl:text-3xl font-bold my-2"
-            >
-              Kaş Ekimi
-            </p>
-            <button
-              class="py-1.5 px-4 md:py-2 md:px-6 w-auto bg-white rounded-[30px] border-2 border-[#225087] text-[#225087] text-sm md:text-base"
-            >
-              Detaylı Bilgi
-            </button>
-          </div>
-        </div>
-
-        <!-- Fourth Box -->
-        <div class="col-span-1 relative w-full h-[450px] lg:h-[625px]">
-          <img
-            src="/asset/img/card4.jpeg"
-            alt="Placeholder Image"
-            class="absolute inset-0 w-full h-full object-cover rounded-[30px]"
-          />
-          <div
-            class="absolute bottom-0 w-full p-4 text-center bg-[#225087] rounded-[20px]"
-          >
-            <p
-              class="text-white text-lg lg:text-2xl xl:text-3xl font-bold my-2"
-            >
-              Afro Saç Ekimi
-            </p>
-            <button
-              class="py-1.5 px-4 md:py-2 md:px-6 w-auto bg-white rounded-[30px] border-2 border-[#225087] text-[#225087] text-sm md:text-base"
-            >
-              Detaylı Bilgi
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="w-full min-h-screen bg-orange-500"></div>
-    <div class="w-full min-h-screen bg-green-500"></div>
+
+    <div class="info-carousel relative flex flex-col items-center py-12">
+      <!-- Title Block -->
+      <h4 class="info-carousel__title text-[#225087] text-xl font-bold mb-1">
+        TURK HAIR INSTITUTE
+      </h4>
+
+      <!-- Subtitle Block -->
+      <h5 class="info-carousel__subtitle text-[#225087] text-lg mb-4">
+        Sakal Ekimi
+      </h5>
+
+      <!-- Info Items Wrapper -->
+      <div
+        class="info-carousel__items-container w-full max-w-3xl overflow-hidden h-[300px] lg:h-[200px]"
+      >
+        <!-- Info Items -->
+        <div
+          class="info-carousel__items flex transition-transform duration-500 ease-in-out"
+          style="width: 100%"
+        >
+          <div
+            class="info-carousel__item flex-shrink-0 w-full text-center text-black text-base lg:text-lg px-4"
+          >
+            Sakal ekimi köselik, seyrek veya dağınık sakal durumlarında sıkça
+            uygulanmakta olan kesin ve kalıcı bir tedavi yöntemidir. Hormonların
+            ideal seviyeye ulaştığı 21-22 yaşlarından itibaren yapılabilir.
+            Sakal ekimi en çok köselik problemi yaşayan erkekler tarafından
+            tercih edilse de, günümüzde seyrek veya dağınık sakal sorunuyla
+            karşı karşıya kalan birçok erkek de sakal ekimi yaptırmakta ve daha
+            doğal, estetik sakallara kavuşmaktadır.
+          </div>
+          <div
+            class="info-carousel__item flex-shrink-0 w-full text-center text-black text-base lg:text-lg px-4"
+          >
+            Sakal ekimi köselik, seyrek veya dağınık sakal durumlarında sıkça
+            uygulanmakta olan kesin ve kalıcı bir tedavi yöntemidir. Hormonların
+            ideal seviyeye ulaştığı 21-22 yaşlarından itibaren yapılabilir.
+            Sakal ekimi en çok köselik problemi yaşayan erkekler tarafından
+            tercih edilse de, günümüzde seyrek veya dağınık sakal sorunuyla
+            karşı karşıya kalan birçok erkek de sakal ekimi yaptırmakta ve daha
+            doğal, estetik sakallara kavuşmaktadır.
+          </div>
+          <div
+            class="info-carousel__item flex-shrink-0 w-full text-center text-black text-base lg:text-lg px-4"
+          >
+            Sakal ekimi köselik, seyrek veya dağınık sakal durumlarında sıkça
+            uygulanmakta olan kesin ve kalıcı bir tedavi yöntemidir. Hormonların
+            ideal seviyeye ulaştığı 21-22 yaşlarından itibaren yapılabilir.
+            Sakal ekimi en çok köselik problemi yaşayan erkekler tarafından
+            tercih edilse de, günümüzde seyrek veya dağınık sakal sorunuyla
+            karşı karşıya kalan birçok erkek de sakal ekimi yaptırmakta ve daha
+            doğal, estetik sakallara kavuşmaktadır.
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Arrow -->
+      <div
+        class="info-carousel__arrow info-carousel__arrow--left bg-[#225087] hover:bg-[#2b66ad] rounded-full p-4 cursor-pointer absolute left-4 lg:left-[5%] xl:left-[20%] top-[15%] lg:top-1/2 transform -translate-y-1/2"
+      >
+        <svg
+          class="w-8 h-8 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+            d="M15 19l-7-7 7-7"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Right Arrow -->
+      <div
+        class="info-carousel__arrow info-carousel__arrow--right bg-[#225087] hover:bg-[#2b66ad] rounded-full p-4 cursor-pointer absolute right-4 lg:right-[5%] xl:right-[20%] top-[15%] lg:top-1/2 transform -translate-y-1/2"
+      >
+        <svg
+          class="w-8 h-8 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+            d="M9 5l7 7-7 7"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Button Block -->
+      <button
+        class="info-carousel__button bg-[#225087] text-white py-3 px-8 rounded-[30px] mt-8 hover:bg-[#2b66ad] transition"
+      >
+        Tedavileri İnceleyin
+      </button>
+    </div>
+
+    <script>
+      const infoCarouselItemsContainer = document.querySelector(
+        ".info-carousel__items"
+      );
+      const infoCarouselArrowLeft = document.querySelector(
+        ".info-carousel__arrow--left"
+      );
+      const infoCarouselArrowRight = document.querySelector(
+        ".info-carousel__arrow--right"
+      );
+      const infoCarouselItems = document.querySelectorAll(
+        ".info-carousel__item"
+      );
+      let infoCarouselCurrentIndex = 0;
+      const infoCarouselTotalItems = infoCarouselItems.length;
+
+      function updateInfoCarouselPosition() {
+        infoCarouselItemsContainer.style.transform = `translateX(-${
+          infoCarouselCurrentIndex * 100
+        }%)`;
+      }
+
+      infoCarouselArrowLeft.addEventListener("click", () => {
+        infoCarouselCurrentIndex =
+          infoCarouselCurrentIndex > 0
+            ? infoCarouselCurrentIndex - 1
+            : infoCarouselTotalItems - 1;
+        updateInfoCarouselPosition();
+      });
+
+      infoCarouselArrowRight.addEventListener("click", () => {
+        infoCarouselCurrentIndex =
+          infoCarouselCurrentIndex < infoCarouselTotalItems - 1
+            ? infoCarouselCurrentIndex + 1
+            : 0;
+        updateInfoCarouselPosition();
+      });
+
+      // Initial setup
+      updateInfoCarouselPosition();
+    </script>
   </body>
 </html>
